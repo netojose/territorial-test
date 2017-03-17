@@ -11,6 +11,8 @@
 ### Testing
 - After installed, run: `yarn test` or `npm test`
 
+**Obs.: Before run a test command, run `npm/yarn start` at least once, to generate css files (thanks react-create-app boilerplate for your limitation :rage: )**
+
 ### Online demo
 - [View on heroku](https://territorial-test.herokuapp.com/)
 
