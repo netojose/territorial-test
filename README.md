@@ -3,7 +3,8 @@
 ## Instructions
 
 ### Running
-- clone the repository (`git clone git@github.com:netojose/territorial-test.git`)
+- `git clone git@github.com:netojose/territorial-test.git`
+- `cd territorial-test`
 - `npm install` or `yarn install`
 - `npm start` or `yarn start`
 
