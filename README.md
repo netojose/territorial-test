@@ -8,7 +8,7 @@
 - `npm start` or `yarn start`
 
 ### Testing
-- After installed, run: `yarn test` or `npm test``
+- After installed, run: `yarn test` or `npm test`
 
 ### Online demo
 - [View on heroku](https://territorial-test.herokuapp.com/)
