@@ -25,5 +25,5 @@
 ### Bonus
 - :white_check_mark: [Demo online on heroku](https://territorial-test.herokuapp.com/)
 - :white_check_mark: Pagination
-- :white_check_mark: Failback message
+- :white_check_mark: Fallback message
 - :white_check_mark: List item tooltip
