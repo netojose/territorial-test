@@ -1,0 +1,24 @@
+@import './_colors.scss';
+
+.SearchBar {
+
+    margin: 10px;
+    text-align: center;
+    
+    input[type="text"], input[type="button"] {
+        padding: 10px;
+        border: solid 5px #c9c9c9;
+        transition: border 0.3s;
+        outline: none;
+        background: $bgPrimary;
+    }
+
+    input[type="text"]:focus, input[type="button"]:hover {
+        border: solid 5px #969696;
+    }
+
+    input[type="button"] {
+        margin-left: 10px;
+        color: $darkText;
+    }
+}

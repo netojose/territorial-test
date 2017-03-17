@@ -1,0 +1,28 @@
+@import './_colors.scss';
+
+.Paginator{
+    clear:both;
+    position:relative;
+    font-size: 11px;
+    text-align:center;
+
+    ul {
+        padding: 0;
+
+        li {
+            display:inline-block;
+            margin: 2px 2px 2px 0;
+            padding:6px 9px 5px 9px;
+            color: $darkText;
+            background: $bgPrimary;
+            cursor: pointer;
+
+            &.current{
+                padding:6px 9px 5px 9px;
+                font-weight: bold;
+                background: $bgAlt;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

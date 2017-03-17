@@ -1,0 +1,12 @@
+@mixin loaderSemiCircle ($distance, $color, $duration) {
+    content: "";
+    position: absolute;
+    right: $distance;
+    bottom: $distance;
+    top: $distance;
+    left: $distance;
+    border: 1px solid transparent;
+    border-top-color: $color;
+    border-radius: 50%;
+    animation: spin $duration linear infinite;
+}

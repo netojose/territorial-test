@@ -1,0 +1,16 @@
+@import './_colors.scss';
+
+.Tooltip{
+    position: absolute;
+    background: $bgPrimary;
+    z-index: 998;
+    bottom: 30px;
+    box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.75);
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px;
+        font-size: 11px;
+        color: $darkText;
+    }
+}

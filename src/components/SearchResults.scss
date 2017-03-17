@@ -1,0 +1,76 @@
+@import './_colors.scss';
+@import './_animations.scss';
+@import './mixins.scss';
+
+.SearchResults{
+
+    .loader{
+            font-size: 0;
+            display: block;
+            position: absolute;
+            z-index: 999;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 0px 0 0 -25px;
+            border: 1px solid transparent;
+            border-top-color: $loader_3;
+            border-radius: 50%;
+            animation: spin 2.3s linear infinite;
+
+            &:before{
+                @include loaderSemiCircle(3px, $loader_1, 1.4s);
+            }
+
+            &:after{
+                @include loaderSemiCircle(6px, $loader_2, 1s);
+            }
+        }
+
+    .box{
+        text-align: center;
+        border: 1px solid;
+        margin: 10px 20px;
+        padding: 10px;
+
+        &.error{
+            color: $darkText;
+            background-color: $error;
+        }
+
+        &.warning{
+            color: $darkText;
+            background-color: $warning;
+        }
+        
+        &.info{
+            color: $darkText;
+            background-color: $info;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 10px;
+        li {
+            padding: 5px 15px;
+            position: relative;
+            cursor: default;
+            list-style: none;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                background: $hoverItem;
+                color: $bgPrimary;
+            }
+
+            a {
+                font-size: 0;
+                &:after {
+                    content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+                }
+            }
+        }
+    }
+
+}
